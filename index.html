@@ -7,6 +7,81 @@
     <title>Bank details form</title>
   </head>
   <body>
-    <script src="./app.js"></script>
+    <div class="container">
+      <div class="cards">
+        <!-- background image  -->
+
+        <img src="./images/bg-main-desktop.png" alt="" / class="main-image">
+        <!-- front card div -->
+
+        <div class="front-card">
+             <div class="inner">
+                <div class="circles">
+                <div class="circle1"></div>
+                <div class="circle2"></div>
+            </div>
+             </div>
+             
+            <img src="./images/bg-card-front.png" alt="" / class="front-image">
+              <div class="zeros">
+        <div class="content">
+            <h1 class="cardnumber">0000 0000 0000 0000</h1>
+        </div>
+      </div>
+      <div class="name">
+        <div class="title">
+            <h2 class="cardholder_name">name</h2>
+        </div>
+      </div>
+      <div class="month-year">
+        <h2><span class="month">00</span> / <span class="year">00</span></h2>
+      </div>
+        </div>
+
+        <!-- back card div -->
+<div class="back-card">
+        <img src="./images/bg-card-back.png" alt="" / class="back-image">
+        <div class="cvc">
+            <div class="content">
+                <h3 class="cvc-number">000</h3>
+            </div>
+        </div>
+      </div>
+   
+      <!-- form -->
+    </div>
+    
+
+  <div class="form">
+
+        <form>
+            <label for="name">Cardholder Name</label>
+            <input class="input-fields" required type="text" name="" id="name" placeholder="e.g. Jane Appleseed." maxlength="15">
+            <label for="number">Card Number</label>
+            
+            
+            <input class="input-fields" required type="number" id="number" placeholder="e.g. 1234 5678 9123 0000" oninput="if(this.value.length > 16) this.value = this.value.slice(0, 16);">
+
+             <label for="date" class="exp">exp date (MM YY)</label>
+            <div class="div">
+               
+            <input class="input-fields" required type="number" name="" id="form_month" placeholder="MM" oninput="if(this.value.length > 2) this.value = this.value.slice(0, 2);">
+            <input class="input-fields" required type="number" id="form_year" placeholder="YY" oninput="if(this.value.length > 2) this.value = this.value.slice(0, 2);">
+             <div class="cvc-details">
+               <label for="cvc">cvc</label>
+            <input class="input-fields" required type="number"  placeholder="e.g. 123" oninput="if(this.value.length > 3) this.value = this.value.slice(0, 3);" id="cvc_form">
+             </div>
+            </div>
+          
+            <button class="button" type="reset" >Confirm</button>
+            
+        </form>
+      </div>
+      <script>
+
+        
+      </script>
+          <script src="./app.js"></script>
   </body>
+
 </html>

@@ -1,0 +1,246 @@
+.container {
+  width: 90%;
+
+  display: block;
+  margin: auto;
+}
+.cards {
+  border: 2px solid black;
+  width: 35%;
+  z-index: 222;
+}
+.main-image {
+  width: 100%;
+  height: 600px;
+  display: block;
+}
+.front-card {
+  width: 100%;
+  position: absolute;
+  top: 10%;
+  z-index: 22222222222;
+}
+
+.back-card {
+  width: 100%;
+  position: absolute;
+  top: 60%;
+  z-index: 22222222222;
+}
+.back-card img {
+  width: 400px;
+  display: block;
+  margin-left: 5%;
+}
+.front-card img {
+  width: 400px;
+  display: block;
+  margin-left: 5%;
+}
+.circles {
+  display: flex;
+  align-items: center;
+
+  gap: 1rem;
+}
+
+.inner {
+  position: absolute;
+  top: 10%;
+  z-index: 222222;
+  left: 9%;
+}
+
+.circle1 {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  background-color: white;
+}
+.circle2 {
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  background-color: transparent;
+  border: 1px solid white;
+}
+.content h1 {
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.5rem;
+  letter-spacing: 2px;
+}
+
+.zeros {
+  position: absolute;
+  top: 40%;
+  left: 9%;
+}
+
+.name {
+  position: absolute;
+  top: 60%;
+  left: 9%;
+}
+.title h2 {
+  font-family: "Poppins", sans-serif;
+  color: white;
+}
+.month-year {
+  position: absolute;
+  top: 65%;
+  right: 67.6%;
+}
+.month-year h2 {
+  font-size: large;
+  color: white;
+  font-family: "Poppins", sans-serif;
+}
+
+.cvc {
+  z-index: 2222222222222;
+  left: 30%;
+  top: 34%;
+  position: absolute;
+}
+.cvc .content h3 {
+  color: white;
+  font-family: "Poppins", sans-serif;
+}
+.form {
+  position: absolute;
+  top: 30%;
+  z-index: 222222222222222222222222222;
+  left: 60%;
+}
+label {
+  width: 1000%;
+  font-family: "Poppins", sans-serif;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  width: 50%;
+}
+.div {
+  display: flex;
+  gap: 1rem;
+  width: 50%;
+  align-items: center;
+}
+input {
+  width: 300px;
+  padding: 0.3rem;
+  border: 1.5px solid gray !important;
+  border-radius: 5px;
+  color: black;
+  font-weight: 700;
+  font-family: "Poppins", sans-serif;
+}
+.div input {
+  width: 54px;
+  height: 20px;
+}
+.cvc-details {
+  display: block;
+  margin-top: -38%;
+  display: flex;
+  gap: 0.6rem;
+  flex-direction: column;
+  justify-content: center;
+}
+.cvc-details input {
+  width: 132px;
+}
+button {
+  width: 310px;
+  border: none;
+  padding: 0.5rem;
+  background-color: black;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  cursor: pointer;
+  display: block;
+  margin-top: 9%;
+}
+.exp {
+  font-size: small;
+}
+.cvc-details label {
+  font-size: small;
+}
+input::placeholder {
+  font-family: "Poppins", sans-serif;
+  color: gray;
+}
+@media only screen and (max-width: 431px) {
+  .container {
+  }
+  .main-image {
+    width: 810px;
+    display: block;
+    /* margin: auto; */
+    margin-left: -29%;
+    margin-top: -9%;
+  }
+  .form {
+    position: absolute;
+    top: 77%;
+    left: 120px;
+  }
+  form {
+    display: flex;
+    gap: 1.2rem;
+  }
+  .front-card img {
+    display: block;
+    margin-top: -9%;
+    margin-left: 4%;
+  }
+  .inner {
+    position: absolute;
+    top: -8px;
+  }
+  .zeros {
+    position: absolute;
+    top: 25%;
+  }
+  .month-year {
+    position: absolute;
+    right: 37px;
+  }
+  .back-card {
+    position: absolute;
+    top: 35%;
+  }
+  body {
+    width: 80%;
+    overflow-x: hidden;
+  }
+  .front-card {
+    position: absolute;
+    left: 40%;
+  }
+  .back-card {
+    position: absolute;
+    left: 38%;
+  }
+  input {
+    width: 500px;
+  }
+  .cvc-details input {
+    width: 338px;
+  }
+  .cvc-details {
+    position: absolute;
+    top: 115%;
+    left: 32%;
+  }
+  button {
+    width: 520px;
+  }
+}
